@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="7e8-0g-9dV">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -16,11 +16,61 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iVN-Bd-HiE">
+                                <rect key="frame" x="36" y="84" width="180" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="HdD-7A-cJt"/>
+                                    <constraint firstAttribute="height" constant="30" id="hfq-Fs-YLZ"/>
+                                </constraints>
+                                <state key="normal" title="MPMoviePlayerController"/>
+                                <connections>
+                                    <action selector="playVideo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qzn-UG-Qio"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4RD-n1-zGY">
+                                <rect key="frame" x="20" y="140" width="206" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="206" id="I4p-BL-dbI"/>
+                                    <constraint firstAttribute="height" constant="30" id="RLS-e3-GiV"/>
+                                </constraints>
+                                <state key="normal" title="MPMoviePlayerViewController"/>
+                                <connections>
+                                    <action selector="MPMoviePlayerViewController:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wcb-3Y-eQq"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4RD-n1-zGY" firstAttribute="top" secondItem="iVN-Bd-HiE" secondAttribute="bottom" constant="26" id="Aqf-J8-R2n"/>
+                            <constraint firstItem="4RD-n1-zGY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="ImE-7c-tpg"/>
+                            <constraint firstItem="iVN-Bd-HiE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="MXc-LD-LeW"/>
+                            <constraint firstItem="iVN-Bd-HiE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="36" id="yhu-RW-GG7"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="kXp-cd-k4M"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="953" y="371"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="pgI-ax-lc6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7e8-0g-9dV" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="waC-4Z-R6u">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="0CD-NA-3g6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M5f-DM-JjE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="294" y="385"/>
         </scene>
     </scenes>
 </document>

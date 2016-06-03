@@ -14,6 +14,13 @@
 		1233A2921CFFBB4800AF71E5 /* VideoPlay.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1233A2901CFFBB4800AF71E5 /* VideoPlay.xcdatamodeld */; };
 		1233A2941CFFBB4800AF71E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1233A2931CFFBB4800AF71E5 /* Assets.xcassets */; };
 		1233A2971CFFBB4800AF71E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1233A2951CFFBB4800AF71E5 /* LaunchScreen.storyboard */; };
+		1233A29F1CFFBD8800AF71E5 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1233A29E1CFFBD8800AF71E5 /* MediaPlayer.framework */; };
+		1233A2A31CFFBD9B00AF71E5 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1233A2A01CFFBD9B00AF71E5 /* CoreMedia.framework */; };
+		1233A2A41CFFBD9B00AF71E5 /* MediaAccessibility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1233A2A11CFFBD9B00AF71E5 /* MediaAccessibility.framework */; };
+		1233A2A51CFFBD9B00AF71E5 /* MediaToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1233A2A21CFFBD9B00AF71E5 /* MediaToolbox.framework */; };
+		1233A2A81CFFBE0400AF71E5 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1233A2A61CFFBE0400AF71E5 /* AVFoundation.framework */; };
+		1233A2A91CFFBE0400AF71E5 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1233A2A71CFFBE0400AF71E5 /* AVKit.framework */; };
+		1233A2AC1CFFCCE400AF71E5 /* MoviePlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1233A2AB1CFFCCE400AF71E5 /* MoviePlayerController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +35,14 @@
 		1233A2931CFFBB4800AF71E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1233A2961CFFBB4800AF71E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1233A2981CFFBB4800AF71E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1233A29E1CFFBD8800AF71E5 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		1233A2A01CFFBD9B00AF71E5 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		1233A2A11CFFBD9B00AF71E5 /* MediaAccessibility.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaAccessibility.framework; path = System/Library/Frameworks/MediaAccessibility.framework; sourceTree = SDKROOT; };
+		1233A2A21CFFBD9B00AF71E5 /* MediaToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaToolbox.framework; path = System/Library/Frameworks/MediaToolbox.framework; sourceTree = SDKROOT; };
+		1233A2A61CFFBE0400AF71E5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		1233A2A71CFFBE0400AF71E5 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		1233A2AA1CFFCCE400AF71E5 /* MoviePlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoviePlayerController.h; sourceTree = "<group>"; };
+		1233A2AB1CFFCCE400AF71E5 /* MoviePlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoviePlayerController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +50,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1233A2A81CFFBE0400AF71E5 /* AVFoundation.framework in Frameworks */,
+				1233A2A91CFFBE0400AF71E5 /* AVKit.framework in Frameworks */,
+				1233A2A31CFFBD9B00AF71E5 /* CoreMedia.framework in Frameworks */,
+				1233A2A41CFFBD9B00AF71E5 /* MediaAccessibility.framework in Frameworks */,
+				1233A2A51CFFBD9B00AF71E5 /* MediaToolbox.framework in Frameworks */,
+				1233A29F1CFFBD8800AF71E5 /* MediaPlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,11 +85,8 @@
 				1233A2881CFFBB4800AF71E5 /* AppDelegate.m */,
 				1233A28A1CFFBB4800AF71E5 /* ViewController.h */,
 				1233A28B1CFFBB4800AF71E5 /* ViewController.m */,
-				1233A28D1CFFBB4800AF71E5 /* Main.storyboard */,
-				1233A2931CFFBB4800AF71E5 /* Assets.xcassets */,
-				1233A2951CFFBB4800AF71E5 /* LaunchScreen.storyboard */,
-				1233A2981CFFBB4800AF71E5 /* Info.plist */,
-				1233A2901CFFBB4800AF71E5 /* VideoPlay.xcdatamodeld */,
+				1233A2AA1CFFCCE400AF71E5 /* MoviePlayerController.h */,
+				1233A2AB1CFFCCE400AF71E5 /* MoviePlayerController.m */,
 				1233A2841CFFBB4800AF71E5 /* Supporting Files */,
 			);
 			path = VideoPlay;
@@ -77,6 +95,17 @@
 		1233A2841CFFBB4800AF71E5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1233A2A61CFFBE0400AF71E5 /* AVFoundation.framework */,
+				1233A2A71CFFBE0400AF71E5 /* AVKit.framework */,
+				1233A2A01CFFBD9B00AF71E5 /* CoreMedia.framework */,
+				1233A2A11CFFBD9B00AF71E5 /* MediaAccessibility.framework */,
+				1233A2A21CFFBD9B00AF71E5 /* MediaToolbox.framework */,
+				1233A29E1CFFBD8800AF71E5 /* MediaPlayer.framework */,
+				1233A28D1CFFBB4800AF71E5 /* Main.storyboard */,
+				1233A2931CFFBB4800AF71E5 /* Assets.xcassets */,
+				1233A2951CFFBB4800AF71E5 /* LaunchScreen.storyboard */,
+				1233A2981CFFBB4800AF71E5 /* Info.plist */,
+				1233A2901CFFBB4800AF71E5 /* VideoPlay.xcdatamodeld */,
 				1233A2851CFFBB4800AF71E5 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -113,6 +142,7 @@
 				TargetAttributes = {
 					1233A2801CFFBB4800AF71E5 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = T6R7E23BTG;
 					};
 				};
 			};
@@ -152,6 +182,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1233A2AC1CFFCCE400AF71E5 /* MoviePlayerController.m in Sources */,
 				1233A28C1CFFBB4800AF71E5 /* ViewController.m in Sources */,
 				1233A2891CFFBB4800AF71E5 /* AppDelegate.m in Sources */,
 				1233A2861CFFBB4800AF71E5 /* main.m in Sources */,
@@ -218,7 +249,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -257,7 +288,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -269,10 +300,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = VideoPlay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.googosoft.VideoPlay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -280,10 +315,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = VideoPlay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.googosoft.VideoPlay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
